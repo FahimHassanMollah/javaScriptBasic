@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="header">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, possimus.</h1>
+<p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minima reiciendis rerum veritatis. Expedita, ipsum, nisi? Excepturi magnam modi molestias sunt vel!</p>
+<button id="btn">click</button>
+<hr>
+first:<input id="first" type="number">
+Second:<input id="second" type="number">
+<button id="button">click to addition</button>
+<script>
+    //alert paragraph
+      // var btn=document.getElementById("btn");
+      // var para=document.getElementById("para");
+      // btn.addEventListener("click",function () {
+      //         alert(para.innerHTML);
+      // });
+
+//addition of two numbers
+    let addBtn=document.getElementById("button");
+    let first=document.getElementById("first");
+    let second=document.getElementById("second");
+    addBtn.addEventListener("click",add );
+            // if (first.value!=="" && second.value!=="")
+            // {
+            //     let result=parseInt(first.value)+parseInt(second.value);
+            //     alert(result);
+            // }
+            // else {
+            //     alert("plzz enter number");
+            // }
+
+    function add() {
+        if (first.value!=="" && second.value!=="")
+        {
+            let result=parseInt(first.value)+parseInt(second.value);
+            alert(result);
+        }
+        else {
+            alert("plzz enter number");
+        }
+    }
+
+
+
+</script>
+</body>
+</html>
